@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-pg-surface: #ffffff;
+  --color-pg-surface-soft: #f8fbff;
+  --color-pg-text-main: #102a43;
+  --color-pg-text-soft: #486581;
+  --color-pg-border: #d9e2ec;
+  --color-pg-safe: #22c55e;
+  --color-pg-warning: #f59e0b;
+  --color-pg-critical: #ef4444;
+}
+
+@layer base {
+  body {
+    @apply bg-[var(--pg-surface-soft)] text-[var(--pg-text-main)] font-sans antialiased;
+  }
+}
+
+.pg-hero {
+  @apply relative overflow-hidden border border-[var(--pg-border)] rounded-2xl p-6 bg-gradient-to-tr from-[#eaf4ff] via-[#f8fbff] to-white mb-6;
+}
+
+.pg-card {
+  @apply border border-[var(--pg-border)] rounded-xl bg-white p-6 shadow-sm hover:shadow-md transition-shadow;
+}
+
+.pg-stat-card {
+  @apply border border-[var(--pg-border)] rounded-xl p-4 bg-gradient-to-b from-white to-[#f8fbff];
+}
+
+.ops-pill {
+  @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold;
+}
+.pill-critical { @apply bg-red-100 text-red-700 border border-red-200; }
+.pill-warning  { @apply bg-amber-100 text-amber-700 border border-amber-200; }
+.pill-safe     { @apply bg-green-100 text-green-700 border border-green-200; }
