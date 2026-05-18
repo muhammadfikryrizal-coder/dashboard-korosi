@@ -112,7 +112,7 @@ export const Dashboard = () => {
           <p className="text-3xl font-black text-pg-critical">{criticalCount}</p>
         </div>
         <div className="pg-stat-card border-l-4 border-l-pg-warning shadow-sm">
-          <p className="text-[10px] font-bold text-pg-text-soft uppercase tracking-wider mb-1">Jumlah Tier P1</p>
+          <p className="text-[10px] font-bold text-pg-text-soft uppercase tracking-wider mb-1">Status Peringatan</p>
           <p className="text-3xl font-black text-pg-warning">{p1Count}</p>
         </div>
         <div className="pg-stat-card border-l-4 border-l-pg-safe shadow-sm">
