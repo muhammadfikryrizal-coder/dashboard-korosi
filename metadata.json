@@ -1,5 +1,5 @@
 {
-  "name": "PipelineGuard AI",
+  "name": "Pipeline Guard",
   "description": "Dashboard preskriptif operasional risiko korosi pipa berbasis kecerdasan buatan (Graph Neural Networks).",
   "requestFramePermissions": [],
   "majorCapabilities": [
