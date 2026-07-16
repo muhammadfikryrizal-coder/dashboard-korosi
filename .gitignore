@@ -1,0 +1,22 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+!**/.env.example
+github_skills/
+.cursor/
+
+# Python backend
+backend/.venv/
+backend/**/__pycache__/
+backend/**/*.pyc
+backend/*.db
+backend/**/*.db
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
